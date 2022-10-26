@@ -2,6 +2,7 @@ package singtel.animal.service;
 
 import singtel.animal.service.actions.*;
 import singtel.animal.service.animals.birds.*;
+import singtel.animal.service.animals.fishs.Fish;
 
 public class Application {
     public static void main(String[] args) {
@@ -34,5 +35,8 @@ public class Application {
         Bird roosterParrot = new Parrot(new CockADoodleSingableAction(), new DefaultFlyableAction());
         roosterParrot.sing();
         roosterParrot.fly();
+
+        Fish fish = new Fish();
+        fish.swim();
     }
 }
