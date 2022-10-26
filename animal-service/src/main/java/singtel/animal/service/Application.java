@@ -2,7 +2,9 @@ package singtel.animal.service;
 
 import singtel.animal.service.actions.*;
 import singtel.animal.service.animals.birds.*;
+import singtel.animal.service.animals.fishs.Clownfish;
 import singtel.animal.service.animals.fishs.Fish;
+import singtel.animal.service.animals.fishs.Shark;
 
 public class Application {
     public static void main(String[] args) {
@@ -36,7 +38,11 @@ public class Application {
         roosterParrot.sing();
         roosterParrot.fly();
 
-        Fish fish = new Fish();
+        Fish fish = new Fish(new DefaultSwimmableAction(), "default color", "default size");
         fish.swim();
+
+        Fish shark = new Shark(new DefaultSwimmableAction(), "gray", "large");
+
+        Fish clawnFish = new Clownfish(new DefaultSwimmableAction(), "orange", "small");
     }
 }
