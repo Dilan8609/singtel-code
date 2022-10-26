@@ -1,6 +1,7 @@
 package singtel.animal.service;
 
 import singtel.animal.service.actions.*;
+import singtel.animal.service.animals.Dolphin;
 import singtel.animal.service.animals.birds.*;
 import singtel.animal.service.animals.fishs.Clownfish;
 import singtel.animal.service.animals.fishs.Fish;
@@ -44,5 +45,7 @@ public class Application {
         Fish shark = new Shark(new DefaultSwimmableAction(), "gray", "large");
 
         Fish clawnFish = new Clownfish(new DefaultSwimmableAction(), "orange", "small");
+
+        Dolphin dolphin = new Dolphin(new DefaultSwimmableAction());
     }
 }
