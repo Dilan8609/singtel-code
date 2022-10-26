@@ -1,15 +1,20 @@
 package singtel.animal.service.animals;
 
 import singtel.animal.service.actions.Flyable;
+import singtel.animal.service.actions.Movable;
 
 public class ButterFly {
-    private final Flyable flyable;
+    private Movable movable;
 
-    public ButterFly(Flyable flyable) {
-        this.flyable = flyable;
+    public ButterFly(Movable movable) {
+        this.movable = movable;
     }
 
-    public void fly() {
-        flyable.fly();
+    public void move() {
+        movable.move();
+    }
+
+    public void setMovable(Movable movable) {
+        this.movable = movable;
     }
 }

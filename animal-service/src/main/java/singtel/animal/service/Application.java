@@ -49,6 +49,6 @@ public class Application {
 
         Dolphin dolphin = new Dolphin(new DefaultSwimmableAction());
 
-        ButterFly butterFly = new ButterFly(new DefaultFlyableAction());
+        ButterFly butterFly = new ButterFly(new ButterFlyMove());
     }
 }
